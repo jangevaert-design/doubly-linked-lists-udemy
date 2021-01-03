@@ -14,6 +14,20 @@ public class Main {
     list.addToFront(mikeWilson);
 
     list.printList();
+    System.out.println("\n" + list.getSize() + "\n");
+
+    Employee billEnd = new Employee("Bill", "End", 78);
+    list.addToEnd(billEnd);
+
+    list.printList();
+    System.out.println("\n" + list.getSize());
+
+    list.removeFromFront();
+    list.printList();
+    System.out.println("\n" + list.getSize());
+
+    list.removeFromEnd();
+    list.printList();
     System.out.println("\n" + list.getSize());
   }
 }
